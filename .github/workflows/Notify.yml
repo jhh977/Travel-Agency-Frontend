@@ -8,8 +8,8 @@ jobs:
 
     steps:
     - name: Repository Dispatch
-      uses: jhh977/Travel-Agency-Frontend
+      uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.PAT }}
-        repository: jhh977/Travel-Agency-Frontend
+        repository: jhh977/Travel-Agency
         event-type: update-submodules-event
